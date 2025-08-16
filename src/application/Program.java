@@ -1,27 +1,40 @@
 package application;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import model.entities.Student;
 
 public class Program {
 	public static void main(String[] args) {
-		Set<Integer> numbersInTreeSet = new TreeSet<>();
+		Set<Student> set = new HashSet<>();
 		
 		try (Scanner sc = new Scanner(System.in)) {
-			System.out.println("add three numbers: ");
-			for (int i = 0; i < 3; i++) {
-				int number = sc.nextInt();
-				numbersInTreeSet.add(number);
+			System.out.print("How many students for course A? ");
+			int a = sc.nextInt();
+			for (int i = 0; i < a; i++) {
+				int id = sc.nextInt();
+				set.add(new Student(id));
 			}
+			System.out.println();
+			System.out.print("How many students for course B? ");
+			int b = sc.nextInt();
+			for (int i = 0; i < b; i++) {
+				int id = sc.nextInt();
+				set.add(new Student(id));
+			}
+			System.out.println();
+			System.out.print("How many students for course C? ");
+			int c = sc.nextInt();
+			for (int i = 0; i < c; i++) {
+				int id = sc.nextInt();
+				set.add(new Student(id));
+			}
+			System.out.println();
 			
-			System.out.println("The numbers in ascending order: " + numbersInTreeSet);
-			
-			
-			
-			
-			
-			
-		} catch (Exception e) {
-			System.out.println("An error occurred: " + e.getMessage());
+			System.out.println("Total students: " + set.size());
 		}
+		
 	}
 }
