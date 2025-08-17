@@ -14,6 +14,14 @@ Este commit inclui um **programa exemplo** que:
 
 ---
 
+# 📊 Contagem de Votos - Java
+
+Este projeto é uma aplicação simples em **Java** que simula a contagem de votos de candidatos a partir de um arquivo `.csv`.  
+
+O objetivo é ler os dados de votação de um arquivo externo, processar as informações e exibir o total de votos por candidato.
+
+---
+
 ## 👨‍💻 **Autor**
 
 Desenvolvido por **Felipy Santos**, como parte da jornada de aprendizado em **Java Back-End**.
